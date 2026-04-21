@@ -2,7 +2,7 @@
 把NanoGPT專案透過jax library 復刻，並在過程中學習jax與GPT的相關知識
 
 # 學習方法
-透過觀看影片，以及搭配AI講解與生成的習題練習。
+透過觀看影片，以及搭配AI講解與生成的習題練習。由於在colab 上學習，所以requirements是在colab上的環境要求。
 
 # 學習成果
 輕量級train 的生成結果：
