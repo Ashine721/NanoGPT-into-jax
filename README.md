@@ -21,19 +21,19 @@ generate_text(
 
 <div align="center">
 
-| Step | adamw | adam | sgd |
-| :---: | :---: | :---: | :---: |
-| 0 | 11.2058 | 11.3546 | 11.3256 |
-| 300 | 6.1922 | 6.1230 | 9.9574 |
-| 600 | 5.7129 | 5.7094 | 9.2806 |
-| 900 | 5.4815 | 5.4651 | 9.1353 |
-| 1200 | 5.3371 | 5.2678 | 8.7729 |
-| 1500 | 5.2865 | 5.2964 | 8.7442 |
-| 1800 | 5.0539 | 5.0307 | 8.3929 |
-| 2100 | 4.8249 | 4.7924 | 8.3947 |
-| 2400 | 4.4971 | 4.5671 | 8.2498 |
-| 2700 | 4.4143 | 4.4124 | 8.2588 |
-| 2999 | 4.6703 | 4.6785 | 8.0719 |
+| Step | adamw | adam | sgd | lion |
+| --- | --- | --- | --- | --- |
+| 0 | 11.2024 | 11.2784 | 11.3245 | 11.2218 |
+| 300 | 6.4992 | 6.4261 | 10.1485 | 6.4037 |
+| 600 | 5.5908 | 5.5712 | 9.2428 | 5.4536 |
+| 900 | 5.4159 | 5.4316 | 9.0359 | 5.2489 |
+| 1200 | 4.7947 | 4.7700 | 8.5666 | 4.4769 |
+| 1500 | 5.1697 | 5.1297 | 8.7445 | 4.8309 |
+| 1800 | 4.9860 | 4.9564 | 8.5661 | 4.6321 |
+| 2100 | 4.4657 | 4.4630 | 8.3499 | 4.0844 |
+| 2400 | 4.8719 | 4.8466 | 8.4304 | 4.5087 |
+| 2700 | 4.9589 | 4.9807 | 8.6234 | 4.5551 |
+| 2999 | 4.5374 | 4.5276 | 8.2307 | 4.06151 |
 
 </div>
 
@@ -45,21 +45,22 @@ generate_text(
 1. adamw
 ```
 --- 開始生成文本 (溫度: 0.8) ---
-To be or not to be.
+To be or not to be
+And, as you give the Tower of the mountingt
+Aff'd, that so his one only as he love stert so so.
 
-KING EDWARD IV:
-I do not the great lament, that so most I know I pray
-Or you do so return to't, it.
+ISABELLA:
+The dost,?
 
-SecondWARDESS:
-To be thy gentle Warwick, he were other,
-Have not caningly: no, good most world.
+CORIOLANUS:
+All more:
+I'll no, good most world.
 
 First Citizen:
-I will to marry, but I do, as you to me,
-Even, he only the queen, too, tell me.
+Acester, sir, but I do, I am no daughter,
+Even, he only the queen, sir, tell him.
 
-Second Citizen
+Second Serving
 
 --- 生成結束 ---
 ```
@@ -67,20 +68,20 @@ Second Citizen
 2. adam
 ```
 --- 開始生成文本 (溫度: 0.8) ---
-To be or not to be that
-Pray by her, please it be subor,
-To g own face of one a eye,
-Or you do so return to't, it.
+To be or not to be
+And, as you, for a cause
+wows delays in their g own face, I know as
+And storst in my worst to the, it hanging you have in or a
+Which?
 
-Second Murderer:
-To be thy gentle Warwick, he hear on an agity.
+SICINIUS:
+Allath not, Warwick:
+My good most world.
 
-SecondISABELLA:
-The strength; I go,
-I thank the king's- country, as you to live,
-Even, he berear, 'twis tell him.
-
-Second Citizen
+First Citizen:
+Aorder, marry, but I do, as you'll live,
+Even, he berear, 'twTill I pray
+At true my
 
 --- 生成結束 ---
 ```
@@ -90,20 +91,16 @@ Second Citizen
 --- 開始生成文本 (溫度: 0.8) ---
 To be or not to be
 
-,, needles,,
-
-
+,, of,,
+:
 hal,
-, Included, that
-
- I
- I, of disperse
+, Included, that, the I my I, of disperse
 
 
 
 
 
-, measures. you Contra,,
+, measures. you Contra in,
 :
 ? Ary,
  reflective it,:
@@ -140,20 +137,18 @@ hal,
 4. lion 
 ```
 --- 開始生成文本 (溫度: 0.8) ---
-To be or not to be recompar,
-And she is a cause of the bark, and he, that
-This I hadst been shown stadoes.
+To be or not to be recompire,
+And she comes a cause
+wows the midst to thy own face of one of hell,
+Or you do so return to thyone;
+And he in the doth we have jally
+That it, I am an agack: can be:
+My good gentle years.
 
-CLARENCE:
-You have not not a mark.
-
-LUCIO:
-Pray, what is not aingly:
-My lord, like a horse, and I go.
-
-HENRY BOLINGBROKE:
-Coment, sir, only thou, 'twar,
-But sheUMam,
+First Citizen:
+A ones, marry, but I do not herecester,
+And, my lord, only your love,
+With tell me false more; and I
 
 --- 生成結束 ---
 ```
