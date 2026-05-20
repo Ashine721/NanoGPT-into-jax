@@ -1,11 +1,11 @@
 # NanoGPT-into-jax Learing
 把NanoGPT專案透過jax library 復刻，並在過程中學習jax與GPT的相關知識
 
-# 實驗
+## 實驗
 改變不同的優化器(optimizer)以實驗不同的優化器會造成什麼不同的結果。
 我挑選以閜四個優化器：
 adamw、adam、sgd、lion
-## 參數設置
+### 參數設置
 
 ```
 generate_text(
@@ -17,7 +17,7 @@ generate_text(
     #seed           = 42,
 )
 ```
-## Table of loss of four optimizer per 300 epcohes in 3000 steps 
+### Table of loss of four optimizer per 300 epcohes in 3000 steps 
 
 <div align="center">
 
@@ -37,10 +37,10 @@ generate_text(
 
 </div>
 
-## loss diagram
+### loss diagram
 <img width="989" height="490" alt="download" src="https://github.com/user-attachments/assets/5ee3566c-beba-43ad-ae4b-f191b6f681c8" />
 
-## 生成文章結果
+### 生成文章結果
 
 1. adamw
 ```
@@ -158,6 +158,6 @@ But sheUMam,
 --- 生成結束 ---
 ```
 
-# 參考資料
+## 參考資料
 1. https://youtu.be/kCc8FmEb1nY?si=tQAh_1TYoZ-TbuUj
 2. https://github.com/karpathy/nanoGPT
