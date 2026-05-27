@@ -9,7 +9,7 @@ jax.config.update("jax_debug_nans", False)
 gpt_cfg   = GPTConfig()
 train_cfg = TrainConfig()
 
-OPTIMIZERS = ["adamw", "adam", "sgd", "lion"]
+OPTIMIZERS = ["adamw", "adam", "sgd", "lion", "muon"]
 STEPS      = train_cfg.max_iters
 
 rng = jax.random.PRNGKey(train_cfg.seed)
