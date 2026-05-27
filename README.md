@@ -42,6 +42,7 @@ generate_text(
 
 ### loss diagram
 <img width="989" height="490" alt="download" src="https://github.com/user-attachments/assets/5ee3566c-beba-43ad-ae4b-f191b6f681c8" />
+<img width="989" height="490" alt="download" src="https://github.com/user-attachments/assets/e2904cec-489e-400c-a37c-a15e9da1c284" />
 
 ### 生成文章結果
 
