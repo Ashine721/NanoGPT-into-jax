@@ -3,8 +3,8 @@
 
 ## 實驗
 改變不同的優化器(optimizer)以實驗不同的優化器會造成什麼不同的結果。
-我挑選以閜四個優化器：
-adamw、adam、sgd、lion
+我挑選以閜五個優化器：
+adamw、adam、sgd、lion、muon
 ### 參數設置
 
 ```
@@ -21,20 +21,23 @@ generate_text(
 
 <div align="center">
 
-| Step | adamw | adam | sgd | lion |
-| --- | --- | --- | --- | --- |
-| 0 | 11.2024 | 11.2784 | 11.3245 | 11.2218 |
-| 300 | 6.4992 | 6.4261 | 10.1485 | 6.4037 |
-| 600 | 5.5908 | 5.5712 | 9.2428 | 5.4536 |
-| 900 | 5.4159 | 5.4316 | 9.0359 | 5.2489 |
-| 1200 | 4.7947 | 4.7700 | 8.5666 | 4.4769 |
-| 1500 | 5.1697 | 5.1297 | 8.7445 | 4.8309 |
-| 1800 | 4.9860 | 4.9564 | 8.5661 | 4.6321 |
-| 2100 | 4.4657 | 4.4630 | 8.3499 | 4.0844 |
-| 2400 | 4.8719 | 4.8466 | 8.4304 | 4.5087 |
-| 2700 | 4.9589 | 4.9807 | 8.6234 | 4.5551 |
-| 2999 | 4.5374 | 4.5276 | 8.2307 | 4.06151 |
+各 Optimizer 結果對比
 
+| Step | adamw | adam | sgd | lion | muon |
+| :---: | :---: | :---: | :---: | :---: | :---: |
+| **0** | 11.3024 | 11.4517 | 11.3661 | 11.2937 | 11.4998 |
+| **300** | 5.9285 | 5.9389 | 9.9231 | 5.8874 | 8.6707 |
+| **600** | 5.6014 | 5.5698 | 9.1242 | 5.3338 | 7.7235 |
+| **900** | 5.6479 | 5.6537 | 9.0890 | 5.4682 | 7.3930 |
+| **1200** | 5.2728 | 5.2870 | 8.9199 | 4.8958 | 6.9614 |
+| **1500** | 4.6504 | 4.6677 | 8.4884 | 4.2444 | 6.0381 |
+| **1800** | 4.8439 | 4.8795 | 8.6336 | 4.5223 | 6.2111 |
+| **2100** | 4.5559 | 4.5583 | 8.3637 | 4.2581 | 5.8634 |
+| **2400** | 4.5812 | 4.5641 | 8.1950 | 4.1139 | 5.8345 |
+| **2700** | 4.6950 | 4.7069 | 8.2809 | 4.2566 | 6.0598 |
+| **2999** | 4.7967 | 4.8190 | 8.3051 | 4.3358 | 5.9310 |
+
+---
 </div>
 
 ### loss diagram
@@ -46,21 +49,21 @@ generate_text(
 ```
 --- 開始生成文本 (溫度: 0.8) ---
 To be or not to be
-And, as you give the Tower of the mountingt
-Aff'd, that so his one only as he love stert so so.
+And, as a truth, please thou shalt say to the great lament, that
+This I know I pray my stumberine sound.
 
 ISABELLA:
 The dost,?
 
 CORIOLANUS:
-All more:
-I'll no, good most world.
+All:
+Myingly:
+My good gentle world.
 
 First Citizen:
-Acester, sir, but I do, I am no daughter,
-Even, he only the queen, sir, tell him.
-
-Second Serving
+I will to marry, but I do, I am no daughter,
+Even, great barren.
+Welcome; but tell me, though sir, my
 
 --- 生成結束 ---
 ```
@@ -69,19 +72,20 @@ Second Serving
 ```
 --- 開始生成文本 (溫度: 0.8) ---
 To be or not to be
-And, as you, for a cause
-wows delays in their g own face, I know as
-And storst in my worst to the, it hanging you have in or a
-Which?
+And, that you, for a cause
+wows the great lament'd that so his thousand
+In the love storst of my device to his,
+To mock aomed or a mark.
 
-SICINIUS:
-Allath not, Warwick:
+GLOUCESTER:
+Aere more not, Warwick:
 My good most world.
 
 First Citizen:
-Aorder, marry, but I do, as you'll live,
-Even, he berear, 'twTill I pray
-At true my
+I will for the king's- country, as you'll live,
+Even, he bere brother, 'twis tell him.
+
+Second Citizen
 
 --- 生成結束 ---
 ```
@@ -91,16 +95,20 @@ At true my
 --- 開始生成文本 (溫度: 0.8) ---
 To be or not to be
 
-,, of,,
-:
+,, needles,,
+
+
 hal,
-, Included, that, the I my I, of disperse
+, Included, that
+
+ I
+ I, of disperse
 
 
 
 
 
-, measures. you Contra in,
+, it. you Contra,,
 :
 ? Ary,
  reflective it,:
@@ -137,18 +145,43 @@ hal,
 4. lion 
 ```
 --- 開始生成文本 (溫度: 0.8) ---
-To be or not to be recompire,
-And she comes a cause
-wows the midst to thy own face of one of hell,
-Or you do so return to thyone;
-And he in the doth we have jally
-That it, I am an agack: can be:
-My good gentle years.
+To be or not to be broke:
+But you, how please it be subitor, sir.
 
-First Citizen:
-A ones, marry, but I do not herecester,
-And, my lord, only your love,
-With tell me false more; and I
+First Senator:
+You pray it disperse you, let me be hanged,
+To mock aomed or prank'd by health.
+
+KING RICHARD III:
+They shall you be: no, good was a little,
+With't: every king will to marry, but I do
+Stand you no loss of highness,
+Which I think 'twere tell it had given him;
+
+--- 生成結束 ---
+```
+
+5. muon
+```
+--- 開始生成文本 (溫度: 0.8) ---
+To be or not to be.
+PICK:
+Not will thou shalthal, and,
+I that so his I know as, my cultivated you.
+
+
+Clown:
+LADomed, sir, we?
+
+
+KING RICHARD III:
+
+
+My Lord:
+My lord was yourIA, I will's:
+A will to the king's-,
+Now as no of my high,--, and Guerrero, 'tw,
+In sites refres, true my
 
 --- 生成結束 ---
 ```
