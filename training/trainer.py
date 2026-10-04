@@ -6,23 +6,31 @@ from config.config import TrainConfig
 
 def _build_optimizer(cfg: TrainConfig):
     lr_schedule = optax.warmup_cosine_decay_schedule(
-        init_value=0.0, peak_value=cfg.learning_rate,
-        warmup_steps=cfg.warmup_iters, decay_steps=cfg.max_iters,
+        init_value=0.0,
+        peak_value=cfg.learning_rate,
+        warmup_steps=cfg.warmup_iters,
+        decay_steps=cfg.max_iters,
         end_value=cfg.min_lr,
     )
-
     match cfg.optimizer:
-        case "adamw":
+        case 'adamw':
             opt = optax.adamw(learning_rate=lr_schedule)
-        case "adam":
+        case 'adam':
             opt = optax.adam(learning_rate=lr_schedule)
-        case "sgd":
+        case 'sgd':
             opt = optax.sgd(learning_rate=lr_schedule, momentum=0.9)
-        case "lion":
+        case 'lion':
             opt = optax.lion(learning_rate=lr_schedule)
+        case 'muon':
+            opt = optax.contrib.muon(
+                learning_rate=lr_schedule,
+                adam_learning_rate=lr_schedule,
+                weight_decay=0.0,
+                ns_steps=5,
+                nesterov=True,
+            )
         case _:
-            raise ValueError(f"Unknown optimizer: {cfg.optimizer}")
-
+            raise ValueError(f'Unknown optimizer: {cfg.optimizer}')
     return optax.chain(optax.clip_by_global_norm(cfg.grad_clip), opt)
 
 def create_train_state(rng, model, cfg: TrainConfig):
